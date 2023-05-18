@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario</title>
+  <script>
+    function mostrarAlerta() {
+      alert("¡Formulario enviado!");
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="stylefor.css">
+</head>
+<body>
+  <h1>Formulario</h1>
+  <form>
+    <div class="form-group">
+        <label for="Cedula">Cedula:</label>
+        <input type="text" id="Cedula" name="Cedula" required>
+    </div>
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <div class="form-group">
+      <label for="Apellido">Apellido:</label>
+      <input type="Apellido" id="Apellido" name="Apellido" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+    <label for="opciones">Selecciona una opción:</label>
+    <select id="opciones" name="opciones" required>
+    <option value="">-- Selecciona tu nivel de semestre --</option>
+    <option value="opcion1">PRIMER SEMESTRE</option>
+    <option value="opcion2">SEGUNDO SEMESTRE</option>
+    <option value="opcion3">TERCER SEMESTRE</option>
+    <option value="opcion3">CUARTO SEMESTRE</option>
+    <option value="opcion3">QUINTO SEMESTRE</option>
+    <option value="opcion3">SEXTO SEMESTRE</option>
+    <option value="opcion3">SEPTIMO SEMESTRE</option>
+    <option value="opcion3">OCTAVO SEMESTRE</option>
+    <option value="opcion3">NOVENO SEMESTRE</option>
+
+
+    </div>
+  </select>
+
+    <button type="submit"onclick="mostrarAlerta()" >Enviar</button>
+
+  </form>
+</body>
+</html>
